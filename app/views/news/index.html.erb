@@ -1,0 +1,25 @@
+
+  <% @news.each do |news| %>
+  <table id="news_table">
+    <tr>
+    <td>
+      <h1><%=  news.title %>
+        <% if user_signed_in?  %>
+          <%= link_to ' Редактировать', edit_news_path(news) %>
+          <%= link_to ' Удалить', news, :confirm => 'Are you sure?', :method => :delete %>
+        <% end %>
+      </h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p style="font-size: 12px;"><%= news.created_at.strftime("%d/ %m/ %Y") %></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%= raw news.description %>
+    </td>
+  </tr>
+  </table>
+  <% end %>

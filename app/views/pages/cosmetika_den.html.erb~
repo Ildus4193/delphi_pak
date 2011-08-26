@@ -1,0 +1,2 @@
+<h2>Сумки текстильные</h2>
+<%= render :partial => 'page_products' %>

@@ -1,4 +1,25 @@
 Delphi::Application.routes.draw do
+ 
+  match "/users/sign_up" => redirect('/')
+  
+  devise_for :users #,  :controllers => { :registrations => "users/registrations" }
+  devise_scope :user do 
+    match "sign_out" => "devise/sessions#destroy", :as => "destroy_session_user"
+    match "admin" => "devise/sessions#new"
+  end
+  
+  resources :news
+  resources :products
+  
+	match 'sumki_tekstil' => 'pages#sumki_tekstil'
+	match 'cosmetika_podarok' => 'pages#cosmetika_podarok'
+	match 'cosmetika_den' => 'pages#cosmetika_den'
+  resources :pages
+	root :to => "pages#home", :id => 'home'
+
+  match "*path" => redirect('/404.html')
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

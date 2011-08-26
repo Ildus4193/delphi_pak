@@ -6,6 +6,11 @@ gem 'rails', '3.0.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'devise'
+gem 'paperclip'
+gem 'high_voltage', '0.9.3'
+gem 'jquery-rails'
+gem 'ckeditor', '3.4.2.pre'
 
 # Use unicorn as the web server
 # gem 'unicorn'

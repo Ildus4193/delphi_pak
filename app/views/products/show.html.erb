@@ -1,0 +1,13 @@
+
+<div id="show_products">
+  <h2><%= @product.title %></h2>
+  <center> <%= image_tag(@product.avatar.url, :alt => @product.title, :class => "round") %></center>
+  <p>
+    <%= @product.description%>
+  </p>
+</div>
+<% if user_signed_in? %>
+<%= link_to 'Редактировать', edit_product_path(@product) %> |
+<%= link_to 'Назад', products_path %>
+
+<% end %>

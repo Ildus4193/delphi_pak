@@ -1,0 +1,17 @@
+<h2>Сумки текстильные</h2>
+<% i=1 %>
+<% @products.each do |product| %>
+	<div class="group_gallery">
+		<div style="vertical-align: bottom;position:relative; height: 180px; margin-bottom: 8px;">
+			<%= link_to (image_tag(product.avatar.url, :class => "round")), product %>
+		</div>
+		<div style=" height: 50px;"> 
+    		<p><%= product.title %></p>
+    	</div>
+   </div>
+   <% if i> 4 %>
+   <div style="clear: left; padding-bottom: 35px;"></div>
+   <% i=0 %>
+   <% end %>
+   <% i+= 1 %>
+<% end %>

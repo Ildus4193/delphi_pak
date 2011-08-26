@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+	font: 14px Verdana, Geneva, sans-serif;
+}
+p
+{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color: #000;
+}
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 5px;
+	font-size:16px;
+}
+h2 {
+	color: #3333FF;
+	font: 16pt 'Myriad Pro',Verdana,Geneva,sans-serif;
+	}
+html, body
+{
+		height: 100%;
+		margin-top: 0px !important;
+		margin: 0;
+		padding: 0;
+}
+body {
+   vertical-align: middle;
+	background-color:#999;
+   background: url(/images/away.jpg);
+   
+}
+#header {
+	background: url(/images/header_bg.png) no-repeat right;
+	width: 1020px;
+	height: 360px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Navigation menu*/
+#nav {
+	top: 340px;
+	left:290px;
+
+  white-space: nowrap;
+  position:absolute;
+}
+
+#nav ul {
+
+  margin: 0 ;
+  padding: 0;
+  font-size: 14px;
+}
+
+#nav ul li {
+
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  margin: 0 5px
+
+}
+
+#nav ul li:hover {
+  background-color: #000000;
+  box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  }
+#nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  colar: #000000;
+}
+
+#nav ul li a:active {
+  color: #ffffff;
+}
+
+#nav ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+
+}
+.round {
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
+}
+
+#phone {
+	top: 75px;
+	right:12px;
+  	position:absolute;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  	padding: 15px 20px 10px 20px;
+}
+#phone p{
+	font: 18px "Myriad Pro", Verdana, Geneva, sans-serif;
+
+}
+#section {
+	min-height: 100%;
+	position: relative;
+	width: 1020px;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto 50px;
+}
+#sidebar {
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	width: 192px;
+}
+#sidebar ul {
+
+  margin: 0 ;
+  padding: 0;
+  font-size: 14px;
+}
+
+#sidebar ul li {
+	background-color: #FFF;
+  list-style-type: none;
+  padding: 10px 15px;
+  margin: 15px 0px;
+   -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+    text-indent: -5px;
+
+	box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+
+}
+
+#sidebar ul li:hover {
+  background-color: #999;
+  box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  color: #ffffff;
+  }
+#sidebar ul li:active {
+  background-color: #3333ff;
+  box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  color: #ffffff;
+  }
+#sidebar ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+  color: #000000;
+}
+
+#sidebar ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#sidebar ul li a:active {
+  color: #ffffff;
+}
+#sidebar ul li.sidebar_item a {
+	color: #fff;
+}
+#sidebar ul li.sidebar_item {
+	background-color: #3333ff;
+}
+#sidebar ul li.sidebar_item:hover {
+	background-color: #1111ff;
+}
+#content {
+	position: relative;
+	left: 210px;
+	top: 20px;
+	padding: 10px 20px;
+	background-color: #FFF;
+	list-style-type: none;
+	margin: 15px 0px;
+	-moz-border-radius:    7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	width: 760px;
+	box-shadow: 3px 3px 3px #777;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px 3px #777;
+}
+#akcii {
+	position:relative;
+	height: 100px;
+}
+#novinki {
+	position:relative;
+	top: 0px;
+}
+#footer {
+	position: relative;
+	height: 50px;
+	width: 1010px;
+	margin: 0 auto;
+}
+#show_products {
+	width: 400px;
+}
+#show_products img {
+	width: 400px;
+}
+
+.group_gallery {
+    float: left;
+    margin: 0 11px;
+    padding: 5px;
+    position: relative;
+    width: 118px;
+    height: 250px;
+}
+.group_gallery img {
+	width: 118px;
+	padding-bottom: 10px;
+}
+.group_gallery table tr td img {
+	width: 118px;
+	padding-bottom: 10px;
+}
+.field {
+margin-bottom: 10px;
+}

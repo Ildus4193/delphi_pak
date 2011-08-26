@@ -1,0 +1,20 @@
+<div id="header">
+	<img style="margin-top: 54px; margin-left: 3px;" src="/images/logo.png" />
+	<div id="nav">
+        <ul>
+            <li class="round"><%= link_to 'Главная', root_path %></li>
+            <li class="round"><%= link_to_pages('О нас', "about") %></li>
+            <li class="round"><%= link_to 'Новости', news_index_path %></li>
+            <li class="round"><%= link_to_pages('Контакты', "contacts") %></li>
+            <li class="round"><%= link_to_pages('Доставка', "dostavka") %></li>
+            <% if user_signed_in? %>
+              <li class="round"><%= link_to "Мой профиль", edit_user_registration_path %></li>
+              <li class="round"><%= link_to "Выйти", destroy_session_user_path, :method => :delete %></li>
+            <% end %>
+        </ul>
+    </div>
+    <div id="phone" class="round"><p style="color: #0066ff; padding-bottom: 3px;"><img src="/images/phone.png" /> Сделайте заказ!</p>
+    <HR  ALIGN="left" SIZE="0"/>
+    <p style="font-size: 22px;">+7 917-397-89-25</p></div>
+</div>
+

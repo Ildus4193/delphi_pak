@@ -1,0 +1,2 @@
+<h2>Косметички для упаковки подарков</h2>
+<%= render :partial => 'page_products' %>

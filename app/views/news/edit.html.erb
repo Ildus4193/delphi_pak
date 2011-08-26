@@ -1,0 +1,8 @@
+<%= javascript_include_tag :ckeditor %>
+<%= form_for(@news) do |f| %>
+<p>
+  <%= f.label :title, "Новость" %>
+  <%= f.text_field :title %>
+</p><br />
+<p><%= f.cktext_area :description, :toolbar=>'Full', :width=>'740px', :height=>'400px' %>
+<% end %>

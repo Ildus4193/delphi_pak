@@ -1,0 +1,19 @@
+<% i=1 %> 
+<div class="group_gallery" style=" height: 300px;">
+<div style="vertical-align: bottom;position:relative; height: 180px; ">
+		<%= link_to (image_tag(product.avatar.url(:thumb), :class => "round")), product %>
+</div>
+<div style=" height: 100px;"> 
+    		<p><%= product.title %></p>
+<%= link_to 'Удалить', product, 
+            :confirm => 'Are you sure?',
+            :method => :delete %> 
+</div>
+<% if i> 4 %>
+   <div style="clear: left; padding-bottom: 35px;"></div>
+   <% i=0 %>
+   <% end %>
+   <% i+= 1 %>
+</div>			
+		
+		

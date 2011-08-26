@@ -1,0 +1,13 @@
+<div id="product_list">
+  <h2>Продукты</h2>
+  <%= link_to 'Новый продукт', new_product_path %>
+  <% form_tag products_path, :method => :get, :remote => true do %>
+    <p>
+       <%= text_field_tag :search, params[:search] %>
+       <%= submit_tag "Search", :name => nil %>
+    </p>
+  <% end %>
+
+  		<%= render @products %>
+</div>
+
